@@ -1,0 +1,61 @@
+Console.WriteLine("Ad");
+string ad = Convert.ToString(Console.ReadLine());
+Console.WriteLine("Soyad");
+string soyad  = Convert.ToString(Console.ReadLine());
+Console.WriteLine("yas");
+int yas  = Convert.ToInt32(Console.ReadLine());
+if (yas < 18)
+{
+    Console.WriteLine("Yasiniz 18den kicikdir");
+    return;
+}Console.WriteLine("");
+Console.WriteLine("");
+string[] uni = { "BDU","ADNSU","AZMIU","ATU" };
+Console.WriteLine("Desteklenen Universitetler");
+for (int i = 0; i < uni.Length; i++)
+{
+    Console.WriteLine("");  
+    Console.Write(uni[i]);
+}
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("Oxudugunuz unini daxil edin Desteklenenler siyahisinda oldugu kimi !");
+string oxuduguuni = Convert.ToString(Console.ReadLine());
+if (oxuduguuni == uni[0])
+{
+    Console.WriteLine("Sizin kreditiniz 5 dir ");
+}
+else  if (oxuduguuni == uni[1])
+{
+    Console.WriteLine("Sizin kreditiniz 6 dir ");
+}
+else if (oxuduguuni == uni[2])
+{
+    Console.WriteLine("Sizin kreditiniz 7 dir ");
+}
+else   Console.WriteLine("Sizin kreditiniz 5 dir ");
+
+Console.WriteLine("imtahan baliniz");
+int bal = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("3 semester balinizi daxil edin");
+int semesterbali1 = Convert.ToInt32(Console.ReadLine());
+int semesterbali2 = Convert.ToInt32(Console.ReadLine()); 
+int semesterbali3 = Convert.ToInt32(Console.ReadLine());
+if ((semesterbali1 + semesterbali2 + semesterbali3) / 3 < 50)
+{
+    Console.WriteLine("Sizin ortalamaniz bu teqaudde istirak etmeyinize icaze vermir");
+    return;
+}
+else Console.WriteLine("Siz teqaudde istirak ede bilersiz)");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("Kececeyiniz fenn");
+string[] fenler = { "fullstack", "kiber" };
+    if (bal>=0 && bal <= 50)
+    {
+    Console.WriteLine(fenler[1]);
+    }
+    else Console.WriteLine(fenler[0]);
+
+
+
